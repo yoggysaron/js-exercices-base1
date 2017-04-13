@@ -6,7 +6,45 @@
     </head>
     <body>
 
-    <!--Votre code ici-->
+
+
+  <fieldset>
+    <legend> Vos informations </legend>
+<label for="nom ?"> </label> Quel est votre nom ? <input type="text" value="" id="nom" placeholder="Exemple : Fred" size="40" autofocus  > <br>
+<label for="age ?"> </label> Quel est votre age ? <input type="text" value="" id="age" placeholder="Exemple : 20" size="40" autofocus  > <br>
+<input type="submit" onclick="musiquestart();" value="Envoyer"/>
+<input type="reset" value="Recommencer" />
+<fieldset>
+
+  <audio id="musique1" preload="auto" src="song1.mp3"> </audio>
+  <audio id="musique2" preload="auto" src="song2.mp3"> </audio>
+
+<p id="phrase"> </p>
+
+
+  <script>
+
+    function musiquestart(){
+    var name = document.getElementById("nom").value;
+    var agee = document.getElementById("age").value;
+    var texte=("bonjour " + name );
+    document.getElementById("phrase").innerHTML = texte;
+
+if (age<18) {
+
+player=document.getElementById("musique1") ;
+}
+else {
+  player=document.getElementById("musique2") ;
+}
+
+player.play() ;
+}
+
+  </script>
+
+
+
 
     </body>
 </html>
