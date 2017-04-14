@@ -32,18 +32,21 @@
         $("#clik1").click(function(){
           var name = $("#nom").val();
           var agee = $("#age").val();
-          var texte ='Bonjour' + name;
+          var texte ='Bonjour ' + name;
           $("#phrase").append(texte);
 
 
           if (age<18) {
 
-          player=document.getElementById("#musique1") ;
+          player=document.querySelector("#musique1");
           }
+
           else {
 
-          player=document.getElementById("musique2") ;
+          player=document.querySelector("#musique2");
         }
+
+        player.play() ;
 
       });
 
